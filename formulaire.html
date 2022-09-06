@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Les formulaires</title>
+</head>
+<body>
+	<form>
+		<label for="prenom">PRENOM: </label>
+		<input type="text" id="prenom" disabled value="Bassirou" readonly="readonly" placeholder="Entrer votre prenom"><br><br>
+		<label for="">Nom: </label>
+		<input type="text"><br><br>
+		<label for="">EMAIL: </label>
+		<input type="email"><br><br>
+		<label for="">Sexe: </label>&nbsp;&nbsp; &nbsp; &nbsp;
+		M <input type="radio" name="sexe" > F <input type="radio" checked name="sexe"><br><br>
+		<label for="">Langues : </label>&nbsp;&nbsp;
+		Anglais<input type="checkbox" name="langue">
+		Francais <input type="checkbox" name="langue">
+		Espagnole <input type="checkbox" name="langue"><br><br>
+		<label for="">Pays</label>
+		<select name="" id="">
+			<option value="">Senegal</option>
+			<option value="">Mali</option>
+			<option value="">Angleterre</option>
+			<option value="">Pomme de terre</option>
+		</select><br><br>
+		<label for="">Couleur :</label>
+		<input type="color"><br><br>
+		<label for="">Message: </label><br>
+		<textarea name=""  maxlength="5" id="" cols="40" rows="5" required></textarea><br>
+		<br>
+		<label for="">Range</label>
+		<input type="range"><br><br>
+		<label for="">Mot de passe</label>
+		<input type="password"><br><br>
+
+
+		<input type="submit" value="Envoyer"> <input type="reset" value="Annuler">
+	</form>
+</body>
+</html> 
