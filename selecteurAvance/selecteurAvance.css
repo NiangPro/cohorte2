@@ -1,0 +1,42 @@
+/*seleteur universel*/
+*{
+	font-family: CALIBRI;
+	font-size: 20px;
+}
+
+/*selectionner deux elements*/
+#lorem3, span{
+	color: blue;
+}
+
+/*selectionner un un b contenu dans a*/
+.contenu a{
+	text-decoration: none;
+	color: red;
+	text-align: center;
+}
+
+
+div + p {
+	font-weight: bold!important;
+}
+
+/*selectionner tous les element possedant
+un attribut particulier*/
+input[name]{
+	background-color: blue;
+}
+
+/*selectionner tous les element possedant
+un attribut particulier avec une valeur precise*/
+input[type="text"],input[type="submit"]{
+	border: 2px solid black;
+	width: 300px;
+}
+
+/*selectionner tous les element possedant
+un attribut particulier avec une valeur*/
+input[type*="password"]{
+	background-color: yellow;
+}
+
