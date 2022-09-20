@@ -1,0 +1,28 @@
+fieldset{
+	width: 500px;
+	margin: auto;
+}
+
+form{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 10px;
+	position: relative;
+	height: 200px;
+}
+
+label{
+	display: block;
+}
+
+#sexe{
+	display: grid;
+	grid-template-columns: 30px 30px;
+}
+
+.btn-group{
+	position: absolute;
+	bottom: 0px;
+	right: 70px;
+
+}

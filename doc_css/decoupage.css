@@ -1,0 +1,40 @@
+#logo,#navbar{
+	display: inline-block;
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+#content,#sidebar{
+	display: inline-block;
+	height: 515px;
+	margin-bottom: 10px;
+}
+#logo{
+	border: 3px solid #000;
+	width: 19%;
+	background-color: yellowgreen;
+}
+
+#navbar{
+	border: 3px solid #000;
+	width: 79%;
+	background-color: cyan;
+}
+
+#content{
+	border: 3px solid #000;
+	width: 79%;
+	background-color: orange;
+}
+
+#sidebar{
+	border: 3px solid #000;
+	width: 19%;
+	background-color: pink;
+}
+
+#footer{
+	border: 3px solid #000;
+	height: 50px;
+	background-color: sandybrown;
+}

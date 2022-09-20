@@ -1,0 +1,32 @@
+form{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 20px;
+	grid-column-gap: 10px;
+	border: 1px solid #000;
+	width: 550px;
+	padding: 10px;
+}
+
+.form-group label{
+	display: block;
+}
+
+.form-group input{
+	outline: none;
+}
+
+button{
+	width: 150px;
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	border-right: 5px solid red;
+	border-left: 5px solid red;
+	background: green;
+	color: white;
+}
+
+button:hover{
+	background: lightgreen;
+}
