@@ -7,7 +7,8 @@
 	<style>
 		ul{
 			list-style-type: none;
-			float: center;
+			
+			width: 100%;
 		}
 
 		ul li{
@@ -32,14 +33,35 @@
 			padding: 5px;
 
 		}
+
+		ul li ul{
+			/*display: none;*/
+			visibility: hidden;
+			position: relative;
+		}
+
+		ul li:hover ul{
+			/*display: block;*/
+			visibility: visible;
+		}
 	</style>
 </head>
 <body>
 	<ul>
 	  <li>Accueil</li>
-	  <li>Apropos</li>
+	  <li>Apropos
+	  	<ul>
+	  		<li>Francais</li>
+	  		<li>Francais</li>
+	  		<li>Francais</li>
+	  		<li>Francais</li>
+	  		<li>Francais</li>
+	  	</ul>
+	</li>
 	  <li>Galerie</li>
 	  <li>Contact</li>
    </ul>
+
+   <p>Lorem ipsum dolor sit amet.</p>
 </body>
 </html>
