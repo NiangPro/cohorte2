@@ -1,0 +1,58 @@
+body{
+	margin: 0;
+}
+nav{
+	height: 30px;
+	width: 100%;
+	background-color: rgb(223, 223, 223);
+	line-height: 25px;
+	padding: 10px;
+}
+
+ul{
+	list-style-type: none;
+	display: flex;
+	padding: 5px;
+	margin-top: -5px;
+}
+
+ul li{
+	height: 35px;
+	cursor: pointer;
+	width: 150px;
+	/*text-align: center;*/
+	font-size: 23px;
+	background-color: rgb(223, 223, 223);
+}
+
+ul li ul{
+	/*display: fle x;*/
+	flex-direction: column;
+	margin-left: -5px;
+	margin-top: 20px;
+	visibility: hidden;
+}
+
+ul li ul li{
+	width: 250px;
+}
+
+ul li ul li ul{
+	margin-left: 250px;
+}
+
+ul li:hover ul{
+	visibility: visible;
+}
+
+ul li:hover ul ul{
+	visibility: hidden;
+}
+
+ul li ul li:hover ul{
+	visibility: visible;
+}
+
+ul ul ul{
+	margin-top: -10px;
+}
