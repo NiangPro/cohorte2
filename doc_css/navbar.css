@@ -26,7 +26,7 @@ ul li{
 }
 
 ul li ul{
-	/*display: fle x;*/
+	/*display: fle 8x;*/
 	flex-direction: column;
 	margin-left: -5px;
 	margin-top: 20px;
