@@ -40,6 +40,12 @@ header{
     height: 300px;
     border-radius: 50%;
     border-top-right-radius: 0;
+    z-index: -10;
+}
+
+#home img:hover{
+    background: rgb(204, 235, 244);
+    transition: 3s;
 }
 
 nav{
@@ -108,4 +114,148 @@ h3{
     border-radius: 15px;
     box-shadow: 10px 10px 20px #000;
     z-index: -10;
+}
+
+#services{
+    margin-left: 200px;
+    width: 72%;
+    height: 430px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.card{
+    width: 450px;
+    padding: 10px;
+}
+
+.card img{
+    width: 80px;
+    height: 80px;
+}
+.card h5{
+    font-size: 18px;
+}
+
+.card p{
+    font-size: 18px;
+}
+
+.card:hover{
+    background: #1184A7;
+    transition: 1s;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: white;
+}
+
+#contact{
+    width: 72%;
+    height: 650px;
+    margin-left: 200px;
+    position: relative;
+}
+
+#contact .left-part{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 500px;
+    height: 450px;
+}
+
+.left-part img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #1184A7;
+}
+
+#contact .right-part{
+    position: absolute;
+    right: 30%;
+    top: 130px;
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    background: #1184A7;
+    opacity: 0.7;
+}
+
+.right-part .info img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.right-part .info{
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.right-part .info span{
+    position: absolute;
+    left: 80px;
+    top: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+#fields{
+    height: 250px;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 370px;
+    padding: 10px;
+}
+
+#fields input{
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border-style: none;
+    outline: none;
+}
+
+#fields textarea{
+    height: 100px;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+}
+
+.right-part button{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.right-part button:hover{
+    background: orange;
+    color: white;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 99.8%;
+    height: 40px;
+    padding: 10px;
+    background: #1184A7;
+    text-align: center;
+    color: white;
+}
+
+footer span{
+    color: orange;
 }
