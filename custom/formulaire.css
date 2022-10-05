@@ -1,0 +1,100 @@
+body{
+    background: rgb(249, 249, 249);
+}
+.form{
+    width: 350px;
+    height: 550px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px #000;
+    position: relative;
+}
+.entete{
+    width: 100%;
+    height: 120px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+}
+
+.profil{
+    width: 150px;
+    height: 150px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 28%;
+}
+
+.profil img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.content{
+    width: 100%;
+    padding-top: 60px;
+    height: 370px;
+    background: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.content h1{
+    text-align: center;
+    color: rgb(138, 138, 251);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.fields{
+    width: 88%;
+    height: 200px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+}
+
+.fields input{
+    border-radius: 10px;
+    border: none;
+    background: rgb(228, 227, 227);
+    padding-left: 20px;
+    outline: none;
+}
+.content button{
+    background: url("images/bg.jpg");
+    padding: 5px 20px 5px 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 25px;
+    border: none;
+    transform: translateX(50%);
+}
+
+.footer{
+    position: relative;
+    margin: auto;
+    width: 240px;
+    border: 1px solid #000;
+}
+
+.footer h4{
+    width: 120px;
+    position: absolute;
+    left: 0px;
+    top: 16px;
+    text-align: right;
+}
+.footer img{
+    height: 90px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 120px;
+}
