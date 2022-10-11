@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les variables</title>
+</head>
+<body>
+    <script>
+        //declaration
+        let prenom = "Babacar",
+        nom = "Diop",
+        adresse = "golf sud",
+        tel = 775757363,
+        sexe = "Homme",
+        decimal = 10.25,
+        trouve = true,
+        datenais = "19/05/2000";
+        //affichage
+        document.write(`
+            LES INFORMATIONS <br>
+            PRENOM : ${prenom} <br>
+            NOM : ${nom} <br>
+            ADRESSE : ${adresse} <br>
+            Telephone : ${tel} <br>
+            SEXE : ${sexe} <br>
+            Date de naissance : ${datenais} <br>
+        `);
+
+        document.write(" LES INFORMATIONS <br> PRENOM : "+prenom+" <br>NOM : "+nom+" <br>ADRESSE : "+adresse+" <br>Telephone : "+tel+" <br>SEXE : "+sexe+" <br>Date de naissance : "+datenais);
+
+        //le type d'une variable
+        alert(typeof trouve);
+
+        //Saisi
+        let user_name = prompt("Entrer votre prenom: ");
+        document.write("<h1>"+user_name+"</h1>");
+    </script>
+</body>
+</html>
