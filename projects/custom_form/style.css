@@ -1,0 +1,152 @@
+body{
+    background: rgb(7, 181, 172);
+}
+.global{
+    width: 70%;
+    height: 480px;
+    margin: auto;
+    margin-top: 60px;
+    box-shadow: 3px 3px 20px 3px #000;
+    position: relative;
+}
+.left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+.right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: rgb(0, 35, 31);
+    color: white;
+}
+
+.carre{
+    border: 2px solid #fff;
+    height: 40%;
+    width: 60%;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.carre h1{
+    font-size: 24px;
+}
+
+.carre p{
+    font-size: 18px;
+}
+
+.btn-group{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.login{
+    border: none;
+    padding: 5px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background: rgb(7, 181, 172);
+    color: white;
+    width: 60px;
+}
+
+.register{
+    border: none;
+    padding: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: rgb(41, 42, 42);
+    color: white;
+    width: 60px;
+}
+
+.right form{
+    position: absolute;
+    top: 12%;
+    left: 15%;
+    width: 70%;
+    height: 80%;
+    text-align: center;
+    background: rgb(9, 51, 49);
+    margin-bottom: 10px;
+
+}
+
+form input{
+    width: 85%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: block;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+
+}
+
+form a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 16px;
+}
+
+form .submit{
+    width: 90%;
+    display: block;
+    border: none;
+    background: rgb(7, 181, 172);
+    text-align: center;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+    margin: 10px 0 20px 20px;
+}
+
+form hr{
+    width: 90%;
+}
+
+form .or{
+    border-radius: 50%;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background: rgb(9, 51, 49);
+}
+
+.icons{
+    height: 40px;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    margin-top: 20px;
+}
+
+.icons img{
+    height: 30px;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.right h4{
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+}
