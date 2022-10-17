@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operateurs</title>
+</head>
+<body>
+    <script>
+        var som, prod, div, dif;
+        let x = parseInt(prompt("veuiller entrer le premier entier?"));
+        let y = parseInt(prompt("veuiller entrer le deuxieme entier?"));
+        
+        som = x + y;
+        dif = x - y;
+        prod = x * y;
+        div = parseInt(x / y);
+
+        document.write(`
+            ${x} + ${y} = ${som} <br>
+            ${x} - ${y} = ${dif} <br>
+            ${x} * ${y} = ${prod} <br>
+            ${x} / ${y} = ${div} <br>
+        `);
+    </script>
+</body>
+</html>
