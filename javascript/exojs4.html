@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var note = parseFloat(prompt("veuiller saisir une note svp !"));
+
+        if(note > 17 && note <=20){
+            alert("Excellent");
+        }else if(note <=17 && note>=16){
+            alert("Tres bien");
+        }else if(note <16 && note >=14){
+            alert("Bien");
+        }else if (note <14 && note >=13){
+            alert("A Bien");
+        }else if(note <13 && note >=10){
+            alert("Passable");
+        }else if (note < 10 && note >=0){
+            alert("Mediocre");
+        }else {
+            alert("Fausse note");
+        }
+    </script>
+</body>
+</html>

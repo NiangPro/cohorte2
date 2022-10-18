@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice 5</title>
+</head>
+<body>
+    <script>
+        let variable=prompt(`
+        MENU PRINCIPALE
+        1- Sports
+        2- Couleurs
+        3- Musique
+        `)
+        switch(variable){
+            case "1":
+            alert("Vous avez choisi sport");
+            
+             let var1=prompt(`
+                a- Football
+                b- Basketball`)
+                switch(var1){
+                    case "a":
+                        alert("vous avez choisi Football");
+                        let var2=prompt(`
+                        1- Homme
+                        2- Femme
+                        `)
+                        switch(var2){
+                            case "1":
+                                alert("vous avez choisi Homme");
+                                break;
+                            case "2":
+                                alert("Vous avez choisi Femme");
+                                break;
+                        }
+                        break;
+                    case "b":
+                        alert("Vous avez choisi Basketball ")
+                        break;
+                }
+                break;
+            case "2":
+                alert("Vous avez choisi Couleur");
+                break;
+                let var3=prompt(`
+                1- Vert
+                2- Orange`)
+                switch(var3){
+                    case "1":
+                        alert("vous avez choisi couleur vert");
+                        break;
+                    case "2":
+                        alert("vous avez choisi couleur orange");
+                        break;
+                }
+            case "3":
+                alert("Vous avez choisi Musique");
+                let var4=prompt(`
+                a- Mbalaax
+                b- Reggae`)
+                switch(var4){
+                    case "a":
+                        alert("vous avez choisi Mbalax");
+                        break;
+                    case "b":
+                        alert("vous avez choisi reggae");
+                        break;
+                }
+            break;
+            default:
+                alert("ce choix ne figure pas dans le menu");
+                break
+        }
+    </script>
+</body>
+</html>

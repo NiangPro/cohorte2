@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch - case</title>
+</head>
+<body>
+    <script>
+        let choix = prompt(`
+            Menu du jour
+            1- Thiebou Djeun
+            2- Souppou Kandja
+            3- Yassa Lakkeuh
+            4- Maffe
+            FAITES VOTRE CHOIX :
+        `);
+
+        Menu:
+        switch(choix){
+            case "1":
+                alert("Vous avez choisi Thiebou Djeun");
+                
+                break Menu;
+            case "2":
+                alert("Vous avez choisi Souppou Kandja");
+                break;
+            case "3":
+                alert("Vous avez choisi Yassa Lakkeuh");
+                break;
+            case "4":
+                alert("Vous avez choisi Maffe");
+                break;
+            default:
+                alert("CHOIX INDISPONIBLE");
+                break;
+        }
+    </script>
+</body>
+</html>
