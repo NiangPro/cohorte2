@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somme chiffre</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Entrer un nombre"));
+
+        let som = 0;
+        let quotient = n;
+
+        do{
+            som = som + parseInt(quotient% 10);
+            quotient = parseInt(quotient/10)
+        }while(quotient != 0);
+
+        document.write("La somme des chiffres de "+n+" est de "+som);
+    </script>
+</body>
+</html>
