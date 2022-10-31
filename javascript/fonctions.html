@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les fonctions</title>
+</head>
+<body>
+    <script>
+        // creation d'une fonction 
+        function direBonjour(nom){
+            document.write("Bonjour "+nom);
+        }
+
+        function sommes(a, b){
+            return a+b;
+        }
+
+        function somme(a , b){
+            document.write(a + " + "+ b + "= "+(a+b)+"<br>");
+        }
+
+        // appel de la fonction 
+        direBonjour("Bassirou");
+        somme(34, 9);
+        somme(4, 3);
+        somme(3, 9);
+
+        let som = sommes(10, 8);
+
+        document.write(som);
+    </script>
+</body>
+</html>

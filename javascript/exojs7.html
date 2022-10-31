@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var prog = prompt("saisir un nombre entier positive")
+    var p = prompt("saisir un nombre entier positive")
+
+    function division(chiffre){
+
+        let value =  parseInt(chiffre);
+
+        let nbre=0;
+
+        do{
+            nbre++;
+            value =  parseInt(value/10)
+        }while(value != 0);
+
+        return nbre;
+    }
+    // 1ere methode 
+    var quotient = parseInt(prog);
+    
+    
+    
+    // var tab=0;
+    // 2eme methode 
+
+    // while(prog[tab]){
+    //     tab++;
+    //     nbre++;
+    // }
+
+    // 3eme methode 
+    // document.write(`l'\entier ${prog}=${prog.length} chiffres`)
+
+    // resultat de la 1ere methode 
+    document.write(`l'\entier ${prog}=${division(prog)} chiffres <br>`)
+    document.write(`l'\entier ${p}=${division(p)} chiffres`)
+
+
+</script>
+</body>
+</html>
