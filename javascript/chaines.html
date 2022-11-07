@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulation des chaines de caracteres</title>
+</head>
+<body>
+    <script>
+        let chaine = "Bonjour tout le monde";
+
+        let prenom = "Alioune", nom =' Seck';
+
+        // recueillir un caractere 
+        // alert(chaine[4]);
+        alert(chaine.charAt(0));
+
+        // la taille d'une chaine 
+        document.write(chaine.length);
+        // pour avoir le dernier caractere
+        document.write(chaine.charAt(chaine.length-1));
+        
+        // concatener plusieurs variables 
+        let nomComplet = prenom.concat(nom, " 32 ans");
+        // prenom += nom; 
+        document.write(nomComplet);
+
+        // conversion en minuscule
+        document.write(prenom.toLowerCase());
+        // conversion en majuscule 
+        document.write(prenom.toUpperCase());
+
+        // teste si une chaine commence par une autre 
+        if (prenom.toLowerCase().startsWith("ALI".toLowerCase())) {
+            document.write("exacte");
+            
+        }else{
+            document.write("erreur");
+        }
+
+        // teste si une chaine se termine par une autre 
+        if (prenom.toLowerCase().endsWith("OUN".toLowerCase())) {
+            document.write("exacte");
+            
+        }else{
+            document.write("erreur");
+        }
+
+        let tel = "77374";
+
+        let chaine1 = " ma chaine ";
+
+        // autocompletion
+        document.write(tel.padEnd(9, "*"));
+        document.write(tel.padStart(9, "-"));
+
+        // enlever les espacements 
+        document.write(chaine1.trim().length);
+        document.write(chaine1.trimEnd().length);
+        document.write(chaine1.trimStart().length);
+
+        for(let i = 0; i<chaine1.length; i++){
+            document.write(chaine1.charAt(i)+ "-");
+        }
+        
+
+        
+
+
+    </script>
+</body>
+</html>
