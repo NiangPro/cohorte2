@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function compteVoyelle(chaine){
+            var tab = ['a', 'e', 'i', 'o', 'u', 'y'];
+            chaine = chaine.toLowerCase();
+            let cpt = 0;
+            tab.forEach((el) =>{
+                for (let i = 0; i < chaine.length; i++) {
+                   if(el == chaine.charAt(i)){
+                    cpt = cpt + 1;
+                   }
+                }
+            });
+            document.write(`la chaine ${chaine} contient: ${cpt} voyelle(s)`);
+        }
+
+        function countVoyelles(chaine){
+            var tab = ['a', 'e', 'i', 'o', 'u', 'y'], cpt = 0;
+            chaine = chaine.toLowerCase();
+
+            for (let i = 0; i < chaine.length; i++) {
+                if(tab.includes(chaine[i]))
+                    cpt++;             
+            }
+
+            document.write(`la chaine ${chaine} contient: ${cpt} voyelle(s)`);
+
+        }
+
+    
+
+        let chaine = prompt("Veuiller saisir une chaine de caractere svp !");
+        countVoyelles(chaine);
+    </script>
+</body>
+</html>

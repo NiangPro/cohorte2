@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les tableaux</title>
+</head>
+<body>
+    <script>
+        // declaration d'un tableau 
+        let tab = Array("Amy", "modou", "Oscar siera");
+        let t2 = [190, -13,12, 4, -5, 39];
+        document.write(tab.at(0))
+        document.write(tab[1])
+
+        // la taille d'un tableau
+        document.write(tab.length)
+
+        //ajouter dans un tableau
+        // a la fin 
+        tab.push("Babacar");
+        // au debut 
+        tab.unshift("Boubacar")
+
+        //supprimer le premier element
+        document.write("l'element supprime est "+tab.shift())
+        // supprimer le dernier element 
+        document.write("l'element supprime est "+tab.pop())
+
+        // inversion d'un tableau 
+        tab.reverse()
+
+        //trier un tableau
+        t2.sort((a, b)=>{
+            return a- b;
+        })
+
+        // recherche un element dans un tableau 
+        t2.includes(4)
+
+        // affichage d'un tableau
+        tab.forEach((valeur, indice)=>{
+            document.write(`<br>tab[${indice}] = ${valeur}`)
+        });
+
+        t2.forEach(function(el, i){
+            document.write("<br>"+t2.at(i) + " ")
+        })
+
+        for (let i = 0; i < tab.length; i++) {
+            document.write(tab.at(i));            
+        }
+
+        //convertir un tableau en une chaine de caracteres
+        let chaine = tab.join("***")
+        document.write(chaine)
+        document.write(typeof chaine)
+
+
+    </script>
+</body>
+</html>
