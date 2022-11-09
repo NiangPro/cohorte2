@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function triDecroissant(tab){
+            document.write(`Avant trie <br>`);
+
+            tab.forEach((indice, valeur)=>{
+                document.write(`<br>tab[${valeur}] = ${indice}`);
+            })
+            tab.sort((a,b)=>{
+                return(a-b);
+            }).reverse();
+            // tab.reverse();
+            document.write(`<br>
+            Apres trie decroissant <br>`);
+
+            tab.forEach((indice, valeur)=>{
+                document.write(`<br>tab[${valeur}] = ${indice}`);
+            })
+        }
+        let tab =[23, -4, 10, -25, -15, 25, "sarr"]
+        triDecroissant(tab);
+            </script>
+    
+</body>
+</html>
