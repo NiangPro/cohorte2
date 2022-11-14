@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integré un code html via javascript</title>
+</head>
+<body>
+    <a href="https://www.google.com" target="_blank" id="lien">
+        <span>Naviguer sur Google</span></a>
+    <script>
+        console.log(document);
+
+        let lien = document.getElementById("lien"); 
+        lien.innerHTML = "Surfez sur youtube";
+        lien.href = "https://www.sunucode.com";
+        lien.setAttribute("href", "https://www.youtube.com");
+        console.log(lien.innerText);
+        console.log(lien.innerHTML);
+        console.log(lien.href);
+        console.log(lien.target);
+        console.log(lien.getAttribute("target"));
+
+        if (confirm("Êtes-vous sûr de vouloir supprimer ?")) {
+            document.write("Suppression avec succès")
+        }else{
+            document.write("Suppression annulée")
+        }
+    </script>
+</body>
+</html>

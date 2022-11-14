@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decallages des elements d'un tableau</title>
+</head>
+<body>
+    <script>
+
+        // elle permet de faire un decallage d'un rang 
+       let decallage = (tab)=>{
+            let lastElement = tab.pop();
+            tab.unshift(lastElement);
+            return tab;
+       } 
+
+    //    elle permet de remplir un tableau 
+       let saisiTableau = (nbreElement) => {
+        let tab = [];
+            for (let i = 1; i <= nbreElement; i++) {
+                tab.push(prompt("Veuillez entrer la valeur "+i+" :"))
+            }
+            return tab;
+       }
+
+    //    elle permet d'afficher un tableau 
+
+       let afficheTableau = (tab)=>{
+            tab.forEach((valeur, index)=>{
+                document.write(`tab[${index + 1}] = ${valeur}<br>`);
+            })
+       }
+
+       let decallageKRang = (tab, k) =>{
+        for (let i = 1; i <= k; i++) {
+            tab = decallage(tab);            
+        }
+        return tab;
+       }
+
+    //    appel des différentes fonctions 
+       let tab = saisiTableau(4);
+       document.write("Avant decallage <br>");
+       afficheTableau(tab);
+       tab = decallageKRang(tab, 3);
+       document.write("Après decallage <br>");
+       afficheTableau(tab);
+
+    </script>
+</body>
+</html>

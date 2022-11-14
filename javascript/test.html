@@ -5,11 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .myclass{
+            color: black;
+            background: red;
+        }
+    </style>
 </head>
 <body>
+
+    <div id="test">
+        <span id="text" class="red jaune vert">Bonjour comme texte</span>
+    </div>
+    <input type="text" value="MON PRENOM" name="prenom">
     <script>
-        let age = parseInt(prompt("Mettez votre age svp"));
-        age >= 18 ? alert("majeur"): alert("mineur");
+        let val = document.getElementById("test");
+        let text = document.getElementById("text");
+
+        let input = document.getElementsByTagName("input");
+
+        // text.className = "myclass";
+        text.classList[0] = "myclass";
+
+        console.log(text.className);
+
+        let tab = text.className.split(" ");
+        tab.push("myclass");
+
+        text.className = tab.join(" ")
+        console.log(text.parentNode);
+
+        console.log(val.innerText);
+        console.log(input[0]);
+        console.log(input[0].getAttribute("name"));
+        console.log(input[0].name);
+        console.log(input[0].setAttribute("value", "Bassirou"));
     </script>
 </body>
 </html>
