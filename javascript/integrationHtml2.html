@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intégration du Html dans javascript 2</title>
+    <style>
+        .myClass{
+            background-color: red;
+            color: green;
+        }
+
+        .police{
+            font-family: algerian;
+            font-size: 24px;
+        }
+
+        .bd{
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, libero?</p>
+    <p class="myClass bd">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+         elit. Repudiandae numquam est
+         nam officia accusamus facere assumenda 
+         fugiat sed adipisci odio!</p>
+
+         <button type="button" id="btn">Cliquez pour voir l'effet</button>
+
+    <script>
+        let paragraphs = document.getElementsByTagName("p");
+        let btn = document.getElementById("btn");
+        let bd = document.getElementsByClassName("bd");
+        paragraphs[0].className = "myClass";
+
+        console.log(bd[0].innerText); 
+
+        // split permet de convertir une chaine de caratères en tableau 
+        let tabclass = paragraphs[1].className.split(" ");
+        tabclass.push("police");
+        paragraphs[1].className = tabclass.join(" ");
+
+        console.log(tabclass);
+
+        btn.addEventListener("click", function(e){
+            paragraphs[1].className = "myClass";
+        })
+
+        console.log(paragraphs[paragraphs.length-1].innerText);
+    </script>
+</body>
+</html>

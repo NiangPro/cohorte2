@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myClass{
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p class="p1">Lorem ipsum dolor sit amet.</p>
+    <p class="p2 p3" id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, fugit.</p>
+
+    <script>
+        let p2 = document.getElementById("p2");
+        console.log(p2.className);
+        let tabClass = p2.className.split(' ');
+        tabClass.push("myClass");
+
+        p2.className = tabClass.join(" ");
+        console.log(p2.className);
+
+    </script>
+</body>
+</html>
