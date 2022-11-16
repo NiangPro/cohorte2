@@ -19,27 +19,9 @@
     </div>
     <input type="text" value="MON PRENOM" name="prenom">
     <script>
-        let val = document.getElementById("test");
-        let text = document.getElementById("text");
-
-        let input = document.getElementsByTagName("input");
-
-        // text.className = "myclass";
-        text.classList[0] = "myclass";
-
-        console.log(text.className);
-
-        let tab = text.className.split(" ");
-        tab.push("myclass");
-
-        text.className = tab.join(" ")
-        console.log(text.parentNode);
-
-        console.log(val.innerText);
-        console.log(input[0]);
-        console.log(input[0].getAttribute("name"));
-        console.log(input[0].name);
-        console.log(input[0].setAttribute("value", "Bassirou"));
+       let test = document.getElementById("test");
+       test.innerText = "DIVISION MODIFIE";
+       console.log(test.innerHTML);
     </script>
 </body>
 </html>

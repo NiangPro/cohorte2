@@ -49,7 +49,7 @@
 
         let tel = "77374";
 
-        let chaine1 = " ma chaine ";
+        let chaine1 = "ma chaine de caractères";
 
         // autocompletion
         document.write(tel.padEnd(9, "*"));
@@ -69,6 +69,12 @@
         document.write(chaine1.replaceAll("a", "e"));
         // document.write(chaine1.substring(0, 3));
         document.write(chaine1.substring(4));
+
+        let tabchaines = chaine1.split(" ");
+
+        let newstring = tabchaines.join("*") 
+
+        console.log(newstring.repeat(5));
 
 
         

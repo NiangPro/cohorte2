@@ -7,10 +7,28 @@
     <title>Les tableaux</title>
 </head>
 <body>
+
     <script>
         // declaration d'un tableau 
         let tab = Array("Amy", "modou", "Oscar siera");
         let t2 = [190, -13,12, 4, -5, 39];
+
+        let matrice = [
+            ["css", 1, "html", "js"],
+            ['B', "typescript", "python", "c++"],
+            ["php", "java", "sublime", "vscode"]
+        ];
+
+        document.write(`<table border="1">`);
+            for (let ligne = 0; ligne < matrice.length; ligne++) {
+                document.write("<tr>");
+                for (let colonne = 0; colonne <matrice[ligne].length; colonne++) {
+                    document.write("<td>"+matrice[ligne][colonne]+ "</td> ");                    
+                }
+                document.write("</tr>");
+            }
+        document.write(`</table>`);
+
         document.write(tab.at(0))
         document.write(tab[1])
 
@@ -32,7 +50,7 @@
         tab.reverse()
 
         //trier un tableau
-        t2.sort((a, b)=>{
+        t2.sort(function(a, b){
             return a- b;
         })
 
@@ -40,9 +58,13 @@
         t2.includes(4)
 
         // affichage d'un tableau
+        document.write(`<table border="1"><tr>`);
         tab.forEach((valeur, indice)=>{
-            document.write(`<br>tab[${indice}] = ${valeur}`)
+            document.write(`<td>${valeur}</td>`)
         });
+
+        document.write(`</tr></table>`);
+
 
         t2.forEach(function(el, i){
             document.write("<br>"+t2.at(i) + " ")

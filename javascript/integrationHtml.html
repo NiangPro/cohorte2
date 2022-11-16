@@ -13,14 +13,14 @@
         console.log(document);
 
         let lien = document.getElementById("lien"); 
-        lien.innerHTML = "Surfez sur youtube";
+        // lien.innerHTML = "Surfez sur youtube";
         lien.href = "https://www.sunucode.com";
         lien.setAttribute("href", "https://www.youtube.com");
         console.log(lien.innerText);
         console.log(lien.innerHTML);
         console.log(lien.href);
         console.log(lien.target);
-        console.log(lien.getAttribute("target"));
+        console.log(lien.getAttribute("href"));
 
         if (confirm("Êtes-vous sûr de vouloir supprimer ?")) {
             document.write("Suppression avec succès")
