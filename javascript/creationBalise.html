@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création balise via javascript</title>
+</head>
+<body>
+    <div id="global" style="position: relative;">
+    </div>
+
+    <script>
+        let global = document.getElementById("global");
+
+        let lien = document.createElement("a");
+        let text = document.createTextNode("Cliquez pour visiter le site de google");
+        lien.appendChild(text)
+        lien.href="https://www.google.com";
+        lien.style.background = "green"; 
+        lien.style.color = "white";
+        lien.style.padding = "10px";
+        lien.style.border = "3px solid red";
+        lien.style.borderRadius = "30px";
+        lien.style.position = `absolute`;
+        lien.style.top = `40px`;
+
+        
+        // global.appendChild(span);
+        span.appendChild(document.createTextNode("Je suis un span"))
+        
+        let div = document.createElement("div");
+        let content = document.createTextNode("JE suis une division ");
+        
+        global.appendChild(lien);
+        div.appendChild(content);
+        
+        // global.append(div);
+        global.insertBefore(div, lien);
+        console.log(div.nextSibling)
+        
+        lien.target = "_blank";
+        
+        let span = document.createElement("span");
+    </script>
+</body>
+</html>
