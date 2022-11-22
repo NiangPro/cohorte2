@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulation des formulaires</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Formulqire d'inscription</legend>
+        <form action="" id="form">
+            <label for="">Prenom</label><br>
+            <input type="text" id="prenom" required><br>
+            <label for="">Nom</label><br>
+            <input type="text" id="nom" required><br>
+            <label for="">Sexe</label> <br>
+            M <input type="radio" value="homme"  name="sexe"> F <input type="radio" value="femme" name="sexe" checked> <br>
+            <label for="">Pays</label>
+            <select name="" id="pays">
+                <option value="">Senegal</option>
+                <option value="">Mali</option>
+                <option value="">Gambie</option>
+            </select>
+            <br><br>
+            <button type="submit" id="btn">Valider</button>
+        </form>
+    </fieldset>
+
+    <script>
+        let prenom = document.getElementById("prenom");
+        let nom = document.getElementById("nom");
+        let sexe = document.getElementsByName("sexe");
+        let pays = document.getElementById("pays");
+
+        let btn = document.getElementById("btn");
+        let form = document.getElementById("form");
+
+        console.log(sexe);
+
+        // prenom.readOnly = true;
+        // prenom.disabled = true;
+
+        prenom.addEventListener("change", (e)=>{
+            // prenom.value = "Demba"; 
+            // console.log(e.target.value);
+            // console.log(prenom.value);
+        })
+
+        pays.addEventListener("change", function(e){
+        console.log(pays.options[pays.selectedIndex].innerText);
+        })
+
+        // btn.addEventListener("click", (e)=>{
+        //     for (let i = 0; i < sexe.length; i++) {
+        //         console.log(sexe[i]);
+        //         if(sexe[i].checked === true){
+        //             console.log("Vous avez selectionne "+sexe[i].value);
+        //         }
+        //     }
+
+        //     e.preventDefault();
+        // })
+
+        form.addEventListener("submit", (e)=>{
+            e.preventDefault();
+            
+            let s = sexe[0].checked == true ? sexe[0].value : sexe[1].value;
+            let p = pays.options[pays.selectedIndex].innerText;
+            document.write(`Prenom : ${prenom.value}<br>
+                            Nom : ${nom.value} <br>
+                            Sexe : ${s} <br>
+                            Pays : ${p}`);
+
+        })
+    </script>
+</body>
+</html>
