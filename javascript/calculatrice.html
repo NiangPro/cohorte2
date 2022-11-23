@@ -97,7 +97,11 @@
         
         
         function editValue(val){
-            entete.innerText = val;
+            if (entete.innerText == '0') {
+                entete.innerText = val;
+            }else{
+                entete.innerText = entete.innerText +val;
+            }
         }
     </script>
 </body>
