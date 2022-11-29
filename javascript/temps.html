@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion du temps</title>
+</head>
+<body>
+
+    <div id="entete"></div>
+    <script>
+        let entete = document.getElementById("entete");
+        let today = new Date();
+        let cpt = 0;
+
+        today.setMinutes(10);
+
+        
+        entete.innerText = today.getHours()+"h:"+today.getMinutes()+"mn"+today.getSeconds()+"s";
+        let idInt = setInterval(()=>{
+            cpt++;
+            today = new Date();
+            entete.innerText = today.getHours()+"h:"+today.getMinutes()+"mn:"+today.getSeconds()+"s";
+            // if(cpt == 5)
+            //     clearInterval(idInt)
+        }, 1000)
+
+        // setTimeout(()=>{
+        //         alert("bonjour")
+        // }, 3000)
+    </script>
+</body>
+</html> 

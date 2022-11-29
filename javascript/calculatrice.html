@@ -101,6 +101,12 @@
             if(val2 != ''){
                 if (opt == '+') {
                     result = parseFloat(val1) + parseFloat(val2);
+                }else if(opt == '-'){
+                    result = parseFloat(val1) - parseFloat(val2);
+                }else if(opt == '/'){
+                    result = parseFloat(val1) / parseFloat(val2);
+                }else if(opt == 'x'){
+                    result = parseFloat(val1) * parseFloat(val2);
                 }
 
                 entete.innerText = val1+opt+val2+"="+result;
@@ -129,7 +135,13 @@
         }
 
         function effacer(){
-            if (opt == '') {
+            if (result.toString().length > 0) {
+                opt = '';
+                val1 = '0';
+                val2 = '';
+                result = '';
+                entete.innerText = val1; 
+            }else if (opt == '') {
                 if (val1.length == 1) {
                     val1 = '0'               
                 }else{
